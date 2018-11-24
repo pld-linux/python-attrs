@@ -8,13 +8,13 @@
 Summary:	attrs - classes without boilerplate
 Summary(pl.UTF-8):	attrs - klasy bez ramowego kodu
 Name:		python-attrs
-Version:	18.1.0
+Version:	18.2.0
 Release:	1
 License:	MIT
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/attrs/
 Source0:	https://files.pythonhosted.org/packages/source/a/attrs/attrs-%{version}.tar.gz
-# Source0-md5:	3f3f3e0750dab74cfa1dc8b0fd7a5f86
+# Source0-md5:	44700294787c8018858777fc150e5d40
 URL:		https://pypi.org/project/attrs/
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
