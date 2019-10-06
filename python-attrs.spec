@@ -8,13 +8,13 @@
 Summary:	attrs - classes without boilerplate
 Summary(pl.UTF-8):	attrs - klasy bez ramowego kodu
 Name:		python-attrs
-Version:	18.2.0
+Version:	19.2.0
 Release:	1
 License:	MIT
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/attrs/
 Source0:	https://files.pythonhosted.org/packages/source/a/attrs/attrs-%{version}.tar.gz
-# Source0-md5:	44700294787c8018858777fc150e5d40
+# Source0-md5:	d5a6ee80beaa072bd2b3bcb6fee0d508
 URL:		https://pypi.org/project/attrs/
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
@@ -25,7 +25,7 @@ BuildRequires:	python-setuptools
 BuildRequires:	python-coverage
 BuildRequires:	python-hypothesis
 BuildRequires:	python-pympler
-BuildRequires:	python-pytest
+BuildRequires:	python-pytest >= 4.3.0
 BuildRequires:	python-six
 BuildRequires:	python-zope.interface
 %endif
@@ -37,7 +37,7 @@ BuildRequires:	python3-setuptools
 BuildRequires:	python3-coverage
 BuildRequires:	python3-hypothesis
 BuildRequires:	python3-pympler
-BuildRequires:	python3-pytest
+BuildRequires:	python3-pytest >= 4.3.0
 BuildRequires:	python3-six
 BuildRequires:	python3-zope.interface
 %endif
