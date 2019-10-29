@@ -1,7 +1,7 @@
 #
 # Conditional build:
 %bcond_without	doc	# Sphinx documentation
-%bcond_without	tests	# unit tests
+%bcond_with	tests	# unit tests
 %bcond_without	python2 # CPython 2.x module
 %bcond_without	python3 # CPython 3.x module
 
@@ -9,7 +9,7 @@ Summary:	attrs - classes without boilerplate
 Summary(pl.UTF-8):	attrs - klasy bez ramowego kodu
 Name:		python-attrs
 Version:	19.2.0
-Release:	2
+Release:	3
 License:	MIT
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/attrs/
