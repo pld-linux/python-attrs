@@ -8,13 +8,13 @@
 Summary:	attrs - classes without boilerplate
 Summary(pl.UTF-8):	attrs - klasy bez ramowego kodu
 Name:		python-attrs
-Version:	19.3.0
-Release:	2
+Version:	21.2.0
+Release:	1
 License:	MIT
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/attrs/
 Source0:	https://files.pythonhosted.org/packages/source/a/attrs/attrs-%{version}.tar.gz
-# Source0-md5:	5b2db50fcc31be34d32798183c9bd062
+# Source0-md5:	06af884070d9180694becdb106e5cd65
 URL:		https://pypi.org/project/attrs/
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
@@ -31,7 +31,7 @@ BuildRequires:	python-zope.interface
 %endif
 %endif
 %if %{with python3}
-BuildRequires:	python3-modules >= 1:3.4
+BuildRequires:	python3-modules >= 1:3.5
 BuildRequires:	python3-setuptools
 %if %{with tests}
 BuildRequires:	python3-coverage
@@ -44,6 +44,7 @@ BuildRequires:	python3-zope.interface
 %endif
 %if %{with doc}
 BuildRequires:	sphinx-pdg-3
+BuildRequires:	python3-sphinx-notfound-page
 BuildRequires:	python3-zope.interface
 %endif
 Requires:	python-modules >= 1:2.7
@@ -64,7 +65,7 @@ podwójnym podkreśleniem).
 Summary:	attrs - classes without boilerplate
 Summary(pl.UTF-8):	attrs - klasy bez ramowego kodu
 Group:		Libraries/Python
-Requires:	python3-modules >= 1:3.4
+Requires:	python3-modules >= 1:3.5
 
 %description -n python3-attrs
 attrs is the Python package that will bring back the joy of writing
