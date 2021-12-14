@@ -44,6 +44,7 @@ BuildRequires:	python3-zope.interface
 %endif
 %if %{with doc}
 BuildRequires:	sphinx-pdg-3
+BuildRequires:	python3-furo
 BuildRequires:	python3-sphinx-notfound-page
 BuildRequires:	python3-zope.interface
 %endif
