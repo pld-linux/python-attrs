@@ -8,13 +8,13 @@
 Summary:	attrs - classes without boilerplate
 Summary(pl.UTF-8):	attrs - klasy bez ramowego kodu
 Name:		python-attrs
-Version:	21.2.0
+Version:	21.4.0
 Release:	1
 License:	MIT
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/attrs/
 Source0:	https://files.pythonhosted.org/packages/source/a/attrs/attrs-%{version}.tar.gz
-# Source0-md5:	06af884070d9180694becdb106e5cd65
+# Source0-md5:	5a9b5e9ceebc380a13fb93235b11bbda
 URL:		https://pypi.org/project/attrs/
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
@@ -138,6 +138,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS.rst CHANGELOG.rst LICENSE README.rst
 %{py_sitescriptdir}/attr
+%{py_sitescriptdir}/attrs
 %{py_sitescriptdir}/attrs-%{version}-py*.egg-info
 %endif
 
@@ -146,6 +147,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS.rst CHANGELOG.rst LICENSE README.rst
 %{py3_sitescriptdir}/attr
+%{py3_sitescriptdir}/attrs
 %{py3_sitescriptdir}/attrs-%{version}-py*.egg-info
 %endif
 
