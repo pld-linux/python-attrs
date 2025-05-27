@@ -1,7 +1,7 @@
 #
 # Conditional build:
 %bcond_without	doc	# Sphinx documentation
-%bcond_with	tests	# unit tests (TODO: re-enable when proper pytest is available in PLD)
+%bcond_without	tests	# unit tests
 %bcond_without	python2 # CPython 2.x module
 %bcond_with	python3 # CPython 3.x module (built from python3-attrs.spec)
 
@@ -98,6 +98,7 @@ Dokumentacja API modułu Pythona attrs.
 %py_build
 
 %if %{with tests}
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 \
 PYTHONPATH=$(pwd)/src \
 %{__python} -m pytest tests
 %endif
@@ -107,6 +108,7 @@ PYTHONPATH=$(pwd)/src \
 %py3_build
 
 %if %{with tests}
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 \
 PYTHONPATH=$(pwd)/src \
 %{__python3} -m pytest tests
 %endif
