@@ -16,6 +16,7 @@ Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/attrs/
 Source0:	https://files.pythonhosted.org/packages/source/a/attrs/attrs-%{version}.tar.gz
 # Source0-md5:	5a9b5e9ceebc380a13fb93235b11bbda
+Patch0:		attrs-intersphinx.patch
 URL:		https://pypi.org/project/attrs/
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
@@ -92,6 +93,7 @@ Dokumentacja API modułu Pythona attrs.
 
 %prep
 %setup -q -n attrs-%{version}
+%patch -P0 -p1
 
 %build
 %if %{with python2}

@@ -1,0 +1,11 @@
+--- attrs-21.4.0/docs/conf.py.orig	2021-12-28 06:47:37.000000000 +0100
++++ attrs-21.4.0/docs/conf.py	2025-05-28 06:12:33.270528093 +0200
+@@ -148,7 +148,7 @@ texinfo_documents = [
+ epub_description = "Python Clases Without Boilerplate"
+ 
+ intersphinx_mapping = {
+-    "https://docs.python.org/3": None,
++    "https://docs.python.org/3": ("python", None),
+ }
+ 
+ # Allow non-local URIs so we can have images in CHANGELOG etc.
